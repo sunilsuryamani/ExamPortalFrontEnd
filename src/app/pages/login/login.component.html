@@ -1,0 +1,43 @@
+
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+
+        <div class="row login-card" style="margin-top: 100px !important;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center">
+                    <img src="../../../assets/login.png" alt=""width="100" 
+                    height="100">
+                </div>
+                <h3 class="text-center">Login Here !!</h3>
+
+                <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit()" >
+                    <!-- Username field -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>User Name</mat-label>
+                        <input required
+                        matInput placeholder="Enter here">
+                        <mat-hint>Valid User Name</mat-hint>
+                      </mat-form-field>
+                      <!-- password field -->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>User Password</mat-label>
+                        <input type="password" required
+                        name = "emailid" matInput placeholder="Enter here">
+                      </mat-form-field>
+                     
+
+                      <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                      </div>
+
+                </form>
+            </mat-card>
+            </div>
+        </div>
+
+    </div>
+
+</div>
